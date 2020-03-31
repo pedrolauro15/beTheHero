@@ -21,6 +21,7 @@ export default function Logon(){
       localStorage.setItem('ongName', response.data.name);
       history.push('/profile');
     }catch (err) {
+      console.log(err);
       alert("Falha ao logar, tente novamente");
     }
   }
